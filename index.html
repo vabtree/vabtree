@@ -1,8 +1,100 @@
+<!DOCTYPE HTML>
+
 <html>
 <head>
-    <title>Title</title>
+  <title>Vabtree</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+<script src="js/jscookmenu.min.js"></script>
+<script>
+var cmMenuBar =
+{
+   mainFolderLeft: '',
+   mainFolderRight: '',
+   mainItemLeft: '',
+   mainItemRight: '',
+   folderLeft: '',
+   folderRight: '<div style="width:16px;height:16px" class="MenuBarSpacerDiv" />',
+   itemLeft: '',
+   itemRight: '<div style="width:16px;height:16px" class="MenuBarSpacerDiv" />',
+   mainSpacing: 0,
+   subSpacing: 0,
+   delay: 100,
+   offsetHMainAdjust: [0, 0],
+   offsetSubAdjust: [0, 0]
+};
+var cmMenuBarHSplit = [_cmNoClick, '<td class="MenuBarMenuSplitLeft"><div></div></td>' +
+                                    '<td class="MenuBarMenuSplitText"><div></div></td>' +
+                                    '<td class="MenuBarMenuSplitRight"><div></div></td>'];
+var cmMenuBarMainVSplit = [_cmNoClick, '<div><table width="15" cellspacing="0"><tr><td class="MenuBarHorizontalSplit">|</td></tr></table></div>'];
+var cmMenuBarMainHSplit = [_cmNoClick, '<td colspan="3" class="MenuBarMainSplitText"><div></div></td>'];
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   cmDrawFromText('MenuBar', 'hbr', cmMenuBar, 'MenuBar');
+});
+</script>
 </head>
 <body>
-<q>Attract what you expect, Reflect what you desire, Become what you respect, Mirror what you admire.</q>
-</body>
+
+<section class="section-nav">
+<div id="vabtreeimg"> <img src="vabtree.jpg" alt="vabtree" width="100" height="108">
+    <p>vabtree</p>
+    <ul class="quicklink">
+        <li> <a href="https://github.com/vabtree"  target="_blank" rel="noopener noreferrer"> Goto Github</a>
+        <li> <a href="https://gitlab.com/vab"  target="_blank" rel="noopener noreferrer"> Goto Gitlab</a>
+        <li> <a href="https://het.as.utexas.edu/HET/Software/html/install-win.html" target="_blank" rel="noopener noreferrer">Qt 4 documentation</a> </li>
+        <li> <a href="https://en.cppreference.com/w/" target="_blank" rel="noopener noreferrer"> C++ reference</a></li>
+        <li> <a href="https://boost.org" target="_blank" rel="noopener noreferrer"> C++ Boost</a></li>
+        <li> <a href="https://nasm.us" target="_blank" rel="noopener noreferrer"> NASM</a></li>
+        <li> <a href="https://flatassembler.net" target="_blank" rel="noopener noreferrer"> FASM</a></li>
+    </ul>
+</div>
+</section>
+    <div id="mainpage">
+        <div id="MenuBar">
+        <ul style="display:none;">
+           <li><span></span><span>Install</span>
+            <ul><li><span></span><a href="index.html" target="_self" title="Qt Install">Qt&nbsp;Install</a></li></ul>
+          </li>
+            <li><span></span><span>About me</span>
+          <ul><li><span></span><a href="about.html" target="_self" title="About me">About&nbsp;me</a></li></ul>
+            </li>
+        </ul>
+        </div>
+
+<code class="hdr16"> <h3>Qt 4 installation:</h3></code>
+<!-- Windows system -->
+<code class="hdr14"> Windows system:</code>
+<p><code class="para">
+[1]. <a href="https://download.qt.io/archive/qt/4.8/4.8.4/qt-win-opensource-4.8.4-mingw.exe"> Qt 4.8.7</a> &darr; with Mingw 4.8.2 (Thread model:posix, GCC 4.8.2 (i686-posix-dwarf-rev3, Built by MinGW-W64 project)<br>
+[2]. <a href = "https://download.qt.io/archive/qtcreator/2.8/2.8.1/qt-creator-windows-opensource-2.8.1.exe">Qt Creator 2.8.1</a> &darr; based on Qt 4.8.4 (MSVC 2010 x86)<br>
+[3]. <a href = "https://github.com/vabtree/Boost-1.56.0"  target="_blank" rel="noopener noreferrer">Boost 1.56 (Mingw 4.8.2)</a><br>
+[4]. <a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/4.9.1/threads-posix/dwarf/i686-4.9.1-release-posix-dwarf-rt_v3-rev3.7z/download"  target="_blank" rel="noopener noreferrer"> MinGW 4.9.1 (Thread model:posix, dwarf exception)</a> &darr;<br>
+[5]. MinGW Toolchains:
+<span class="label">
+<a href="https://sourceforge.net/projects/mingw-w64/files/"  target="_blank" rel="noopener noreferrer">[a] Mingw-w64 files</a><br>
+<a href="https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/"  target="_blank" rel="noopener noreferrer">[b] Mingw-w64 toolchains targetting Win32(personal builds)</a>
+</span><br>
+</code></p>
+
+<!-- Linux system -->
+<code class="hdr14"> Debian/Ubuntu system:</h3></code>
+<p><code class="para">
+[1]. <a href="https://download.qt.io/archive/qt/4.8/4.8.4/" target="_blank" rel="noopener noreferrer">Qt 4.8.4 (GCC 4.6.1 x64 July 2013)</a> lowest prebuilt Qt 4<br>
+[2]. <a href= "https://download.qt.io/archive/qtcreator/2.8/2.8.1/" target="_blank" rel="noopener noreferrer"> Qt Creator 2.8.1</a><br>
+[3]. <a href="https://download.qt.io/archive/qtcreator/3.0/3.0.0/" target="_blank" rel="noopener noreferrer">Qt Creator 3.0.0*</a><br>
+[4]. Install Qt 4:<br>
+     <code class="sh"> > sudo apt install qt4-default</code><br>
+[5]. Install c++ boost:<br>
+    <code class="sh"> > sudo apt install libboost-dev</code><br>
+    <code class="sh"> > sudo apt install libboost-all-dev</code><br>
+[6]. If GDB fails to run:<br>
+    <code class="sh"> > sudo chmod +s /usr/bin/gdb</code><br>
+[7]. Solve help plugin error using:<br>
+    <code class="sh"> > sudo apt-get install libgstreamer-plugins-base0.10-0</code><br>
+</code></p>
+
+</div>
 </html>

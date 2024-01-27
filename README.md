@@ -1,5 +1,5 @@
 
-
+*"It takes something more than intelligence to act intelligently."*
 <!-- ### Hi there 👋
 **vabtree/vabtree** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
